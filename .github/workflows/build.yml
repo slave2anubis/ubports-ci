@@ -6,11 +6,14 @@
 name: Build System Image
 
 on: 
-#  push:
-#    branches:
-#      - ut-7.1
-  schedule:
-    - cron: 0 8  1 * ?
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'  
 
 env:
   SSH_ACTIONS: false
