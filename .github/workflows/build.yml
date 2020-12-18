@@ -25,7 +25,7 @@ jobs:
 
     env:
       DEVICE: onyx
-      ANDROID_ROOT: /home/runner/work/halium/
+      ANDROID_ROOT: /home/dacian/work/halium/
 
     steps:
     - name: Checkout
