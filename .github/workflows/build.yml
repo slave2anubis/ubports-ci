@@ -69,9 +69,6 @@ jobs:
         git clone https://github.com/ittat/kernel_oneplus_onyx.git  -b ut-7.1 $ANDROID_ROOT/kernel/oneplus/onyx --depth=1
         git clone https://github.com/ubports-onyx/vendor_oneplus.git  -b ut-7.1  $ANDROID_ROOT/vendor/oneplus --depth=1
 
-    - name: SSH connection to Actions
-      uses: slave2anubis/debugger-action@master
-      if: env.SSH_ACTIONS == 'true'
 
     - name: Build HAL
       run: |
